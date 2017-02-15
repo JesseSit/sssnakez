@@ -48,7 +48,7 @@ public class MergeSortTester
     public static long runTest(int size, int maxNum){
 	int[] Arr = generateArray(size,maxNum);
 	long startTime = System.nanoTime();
-	MergeSortJames.sort(Arr);
+	MergeSort.sort(Arr);
 	long endTime   = System.nanoTime();
 	return endTime - startTime;
     }
