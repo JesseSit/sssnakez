@@ -7,7 +7,14 @@
   class MergeSortTester
 
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+   First, the unsorted array is split in half until there's only one element in each of 
+  resulting arrays. So given an array with 4 elements, those 4 get split into two arrays
+  with 2 elements each, and each of those length 2 arrays get split into two arrays with
+  1 element each. In that case, there are four 1 element arrays. This guarantees sortedness
+  in each of the one element arrays. Now, each of those one element arrays are merged with 
+  the other one element array with which they were originally split, and the forming array
+  is merged with the other same-length array with which it was originally split, until 
+  there is one sorted array that is the length of the original unsorted array.x
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
   O(nlog(n))
@@ -15,11 +22,11 @@
   Mean execution times for dataset of size n:
   Batch size: 100000
   Maximum Random Number: 100000
-  n=1       time: 5.2E-8 seconds
-  n=10      time: 8.4E-6 seconds
-  n=100     time: 9.8454E-5 seconds
+  n=1       time: 1.10E-08 seconds
+  n=10      time: 5.10E-07 seconds
+  n=100     time: 5.28E-06 seconds
   ...
-  n=100000  time: .013439039 seconds
+  n=100000  time: 0.00950558 seconds
 
   ANALYSIS:
   <INSERT YOUR RESULTS ANALYSIS HERE>
