@@ -38,9 +38,12 @@ public class MergeSortTester
 
     /******************************
      * execution time analysis 
-     * <INSERT YOUR DESCRIPTION HERE OF 
-     *  YOUR APPARATUS FOR GENERATING EXECUTION 
-     *  TIME DATA...>
+    Our algo runs 100000 tests per randomly generated array sizes of 1,10, 100, and 100000. 
+	For each, the mean of the 100000 tests is calculated for an average execution time.
+	Method averageTestTime runs runTest 100000 times, which first generates a randomly-populated
+	array of a specified size and then starts timing the MergeSort. Once the array is sorted, the
+	total time is found by calculating the difference between the end and start time. Then the time
+	for the 100000 tests is averaged.
      ******************************/
 
     //generates an int array of length 'size' with random numbers within the range 0-maxNum
