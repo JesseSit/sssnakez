@@ -25,7 +25,8 @@
   n=1       time: 1.10E-08 seconds
   n=10      time: 5.10E-07 seconds
   n=100     time: 5.28E-06 seconds
-  ...
+  n=1000    time: 7.4418E-5 seconds
+  n=10000   time: 7.96232E-4 seconds
   n=100000  time: 0.00950558 seconds
 
   ANALYSIS:
@@ -85,6 +86,14 @@ public class MergeSortTester
 	System.out.println(averageTestTime(numTests, size, maxNum));
 	//for n=100 -------------------------------------
 	size = 100;
+	System.out.println("Now printing the average execution time for an array of size " + size);
+	System.out.println(averageTestTime(numTests, size, maxNum));
+	//for n=1000 ---------------------------------------
+	size = 1000;
+	System.out.println("Now printing the average execution time for an array of size " + size);
+	System.out.println(averageTestTime(numTests, size, maxNum));
+	//for n=10000 -------------------------------------
+	size = 10000;
 	System.out.println("Now printing the average execution time for an array of size " + size);
 	System.out.println(averageTestTime(numTests, size, maxNum));
 	//for n=100000 -------------------------------------
